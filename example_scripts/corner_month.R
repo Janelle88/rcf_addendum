@@ -13,6 +13,8 @@ SiteID <- "BAND"
 #                      longitude = -106.3054344,
 #                      units = "imperial")
 
+raw_data <- read_csv(here::here("BAND.csv"))
+
 thresholds <- calc_thresholds("BAND", data = raw_data, directory = my_directory, units = "imperial")
 
 corner_month <- cf_quadrant("BAND", data = thresholds, future_year = 2040, summarize_by = "month", method = "corner", directory = my_directory)

@@ -8,6 +8,8 @@ library(ggrepel)
 my_directory <- here::here()
 SiteID <- "BAND"
 
+raw_data <- read_csv(here::here("BAND.csv"))
+
 # raw_data <- rcf_data(SiteID = "BAND",
 #                      latitude = 35.75758546,
 #                      longitude = -106.3054344,
