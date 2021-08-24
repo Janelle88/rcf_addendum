@@ -1,0 +1,355 @@
+Differences found between the objects!
+
+A summary is given below.
+
+There are columns in BASE and COMPARE with different classes !!
+All rows are shown in table below
+
+  ==============================================
+   VARIABLE        CLASS.BASE        CLASS.COMP 
+  ----------------------------------------------
+      cf     c("ordered", "factor")    factor   
+  ----------------------------------------------
+
+Not all Values Compared Equal
+First 10 of 18 rows are shown in table below
+
+  ======================================
+       Variable       No of Differences 
+  --------------------------------------
+     precip_yearly           150        
+         tmin                150        
+         tmax                150        
+         tavg                150        
+     heat_index_ec           150        
+    heat_index_dan            12        
+   temp_over_95_pctl         149        
+   temp_over_99_pctl         150        
+   temp_under_freeze         150        
+   temp_under_5_pctl         149        
+  --------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  ==================================================
+     VARIABLE     ..ROWNUMBER..    BASE    COMPARE  
+  --------------------------------------------------
+   precip_yearly        1        74.22096  74.72261 
+   precip_yearly        2        68.33695  66.80703 
+   precip_yearly        3        68.28156  70.64496 
+   precip_yearly        4        64.07406  65.97195 
+   precip_yearly        5        71.56797  73.97809 
+   precip_yearly        6        65.01547  64.51255 
+   precip_yearly        7        66.90920  67.88284 
+   precip_yearly        8        72.38735  75.32288 
+   precip_yearly        9        69.58278  66.72871 
+   precip_yearly       10        74.47996  72.44104 
+  --------------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  =============================================
+   VARIABLE  ..ROWNUMBER..    BASE    COMPARE  
+  ---------------------------------------------
+     tmin          1        39.94788  39.69304 
+     tmin          2        40.03624  40.14961 
+     tmin          3        39.64406  39.47476 
+     tmin          4        39.68199  39.86587 
+     tmin          5        40.03056  40.29498 
+     tmin          6        39.52206  39.69877 
+     tmin          7        40.34963  40.51071 
+     tmin          8        40.50777  40.43097 
+     tmin          9        40.28986  40.34644 
+     tmin         10        40.33327  40.44083 
+  ---------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  =============================================
+   VARIABLE  ..ROWNUMBER..    BASE    COMPARE  
+  ---------------------------------------------
+     tmax          1        59.00535  58.79814 
+     tmax          2        59.38456  59.55527 
+     tmax          3        59.03174  58.81251 
+     tmax          4        59.33475  59.45718 
+     tmax          5        59.55320  59.79095 
+     tmax          6        59.11774  59.33189 
+     tmax          7        59.71173  60.00804 
+     tmax          8        60.58495  60.36877 
+     tmax          9        60.26916  60.47605 
+     tmax         10        59.94535  60.17916 
+  ---------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  =============================================
+   VARIABLE  ..ROWNUMBER..    BASE    COMPARE  
+  ---------------------------------------------
+     tavg          1        49.47661  49.24559 
+     tavg          2        49.71040  49.85244 
+     tavg          3        49.33790  49.14364 
+     tavg          4        49.50837  49.66152 
+     tavg          5        49.79188  50.04296 
+     tavg          6        49.31990  49.51533 
+     tavg          7        50.03068  50.25937 
+     tavg          8        50.54636  50.39987 
+     tavg          9        50.27951  50.41124 
+     tavg         10        50.13931  50.30999 
+  ---------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  ===============================================
+     VARIABLE     ..ROWNUMBER..  BASE   COMPARE  
+  -----------------------------------------------
+   heat_index_ec        1        2.875  2.555556 
+   heat_index_ec        2        1.750  1.555556 
+   heat_index_ec        3        2.500  2.222222 
+   heat_index_ec        4        2.125  1.888889 
+   heat_index_ec        5        1.125  1.000000 
+   heat_index_ec        6        1.375  1.222222 
+   heat_index_ec        7        1.625  1.444444 
+   heat_index_ec        8        1.625  1.444444 
+   heat_index_ec        9        2.625  2.333333 
+   heat_index_ec       10        1.500  1.333333 
+  -----------------------------------------------
+
+
+First 10 of 12 rows are shown in table below
+
+  =====================================================
+      VARIABLE     ..ROWNUMBER..    BASE      COMPARE  
+  -----------------------------------------------------
+   heat_index_dan        24       0.1250000  0.1111111 
+   heat_index_dan        56       0.1666667  0.1428571 
+   heat_index_dan        57       0.1666667  0.1428571 
+   heat_index_dan        59       0.1666667  0.1428571 
+   heat_index_dan        84       0.1428571  0.1250000 
+   heat_index_dan        88       0.4285714  0.3750000 
+   heat_index_dan       109       0.0000000  0.2222222 
+   heat_index_dan       114       0.0000000  0.2222222 
+   heat_index_dan       118       0.0000000  0.4444444 
+   heat_index_dan       139       0.2222222  0.0000000 
+  -----------------------------------------------------
+
+
+First 10 of 149 rows are shown in table below
+
+  ====================================================
+       VARIABLE       ..ROWNUMBER..   BASE   COMPARE  
+  ----------------------------------------------------
+   temp_over_95_pctl        1        27.875  28.11111 
+   temp_over_95_pctl        2        26.875  27.11111 
+   temp_over_95_pctl        3        29.750  30.22222 
+   temp_over_95_pctl        4        33.375  34.88889 
+   temp_over_95_pctl        5        32.375  32.00000 
+   temp_over_95_pctl        6        25.625  27.66667 
+   temp_over_95_pctl        7        26.750  26.88889 
+   temp_over_95_pctl        8        35.625  34.66667 
+   temp_over_95_pctl        9        36.000  38.88889 
+   temp_over_95_pctl       10        37.750  38.22222 
+  ----------------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  ====================================================
+       VARIABLE       ..ROWNUMBER..  BASE    COMPARE  
+  ----------------------------------------------------
+   temp_over_99_pctl        1        7.750   7.111111 
+   temp_over_99_pctl        2        7.500   7.111111 
+   temp_over_99_pctl        3        7.625   8.000000 
+   temp_over_99_pctl        4        9.250  10.000000 
+   temp_over_99_pctl        5        8.750   8.444444 
+   temp_over_99_pctl        6        6.625   7.444444 
+   temp_over_99_pctl        7        7.625   7.777778 
+   temp_over_99_pctl        8        9.500   9.555556 
+   temp_over_99_pctl        9        9.000  10.888889 
+   temp_over_99_pctl       10        8.750  10.444444 
+  ----------------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  ====================================================
+       VARIABLE       ..ROWNUMBER..   BASE   COMPARE  
+  ----------------------------------------------------
+   temp_under_freeze        1        82.250  85.88889 
+   temp_under_freeze        2        90.625  87.66667 
+   temp_under_freeze        3        90.500  92.77778 
+   temp_under_freeze        4        93.750  91.22222 
+   temp_under_freeze        5        87.000  81.88889 
+   temp_under_freeze        6        95.750  94.77778 
+   temp_under_freeze        7        76.625  74.44444 
+   temp_under_freeze        8        75.250  77.77778 
+   temp_under_freeze        9        83.375  83.44444 
+   temp_under_freeze       10        81.250  79.33333 
+  ----------------------------------------------------
+
+
+First 10 of 149 rows are shown in table below
+
+  =====================================================
+       VARIABLE       ..ROWNUMBER..   BASE    COMPARE  
+  -----------------------------------------------------
+   temp_under_5_pctl        1         7.875  10.111111 
+   temp_under_5_pctl        2        10.750  10.111111 
+   temp_under_5_pctl        3         7.250   9.777778 
+   temp_under_5_pctl        4         7.750   7.222222 
+   temp_under_5_pctl        5         7.750   7.111111 
+   temp_under_5_pctl        6         9.625   9.111111 
+   temp_under_5_pctl        7         6.625   6.444444 
+   temp_under_5_pctl        8         8.875   8.333333 
+   temp_under_5_pctl        9         6.750   6.555556 
+   temp_under_5_pctl       10         7.500   6.888889 
+  -----------------------------------------------------
+
+
+First 10 of 147 rows are shown in table below
+
+  =============================================
+   VARIABLE   ..ROWNUMBER..   BASE    COMPARE  
+  ---------------------------------------------
+   no_precip        2        240.750  241.4444 
+   no_precip        3        237.875  234.7778 
+   no_precip        4        240.750  239.5556 
+   no_precip        5        233.875  233.6667 
+   no_precip        6        237.375  237.3333 
+   no_precip        7        237.000  238.2222 
+   no_precip        8        243.750  240.6667 
+   no_precip        9        244.500  247.1111 
+   no_precip       10        236.125  239.0000 
+   no_precip       11        237.250  238.8889 
+  ---------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  ====================================================
+       VARIABLE      ..ROWNUMBER..    BASE    COMPARE 
+  ----------------------------------------------------
+   no_precip_length        1        2636.375     96   
+   no_precip_length        2        2413.125     55   
+   no_precip_length        3        2686.500     85   
+   no_precip_length        4        2862.375     93   
+   no_precip_length        5        2137.875     70   
+   no_precip_length        6        2391.875     82   
+   no_precip_length        7        2160.750     96   
+   no_precip_length        8        2933.750    104   
+   no_precip_length        9        2716.000     67   
+   no_precip_length       10        2579.750     62   
+  ----------------------------------------------------
+
+
+First 10 of 145 rows are shown in table below
+
+  ================================================
+      VARIABLE     ..ROWNUMBER..  BASE   COMPARE  
+  ------------------------------------------------
+   precip_95_pctl        1        7.875  8.222222 
+   precip_95_pctl        2        7.125  7.000000 
+   precip_95_pctl        3        6.875  7.333333 
+   precip_95_pctl        4        6.375  6.888889 
+   precip_95_pctl        5        6.125  7.111111 
+   precip_95_pctl        6        6.750  6.666667 
+   precip_95_pctl        7        6.375  6.777778 
+   precip_95_pctl        8        8.500  9.222222 
+   precip_95_pctl        9        7.250  7.111111 
+   precip_95_pctl       10        8.125  7.888889 
+  ------------------------------------------------
+
+
+First 10 of 145 rows are shown in table below
+
+  ================================================
+      VARIABLE     ..ROWNUMBER..  BASE   COMPARE  
+  ------------------------------------------------
+   precip_99_pctl        1        1.500  1.666667 
+   precip_99_pctl        2        1.750  1.777778 
+   precip_99_pctl        3        0.875  1.000000 
+   precip_99_pctl        4        1.125  1.555556 
+   precip_99_pctl        5        2.625  2.777778 
+   precip_99_pctl        6        1.125  1.111111 
+   precip_99_pctl        8        1.500  1.555556 
+   precip_99_pctl        9        1.500  1.666667 
+   precip_99_pctl       10        1.500  1.555556 
+   precip_99_pctl       11        1.125  1.444444 
+  ------------------------------------------------
+
+
+First 10 of 149 rows are shown in table below
+
+  ==================================================
+      VARIABLE      ..ROWNUMBER..   BASE   COMPARE  
+  --------------------------------------------------
+   precip_moderate        1        21.000  21.55556 
+   precip_moderate        2        18.625  18.11111 
+   precip_moderate        3        18.125  19.33333 
+   precip_moderate        4        16.875  17.44444 
+   precip_moderate        5        19.625  20.55556 
+   precip_moderate        6        16.750  16.77778 
+   precip_moderate        7        19.625  20.88889 
+   precip_moderate        8        22.750  23.55556 
+   precip_moderate        9        21.000  19.77778 
+   precip_moderate       10        21.750  21.44444 
+  --------------------------------------------------
+
+
+First 10 of 149 rows are shown in table below
+
+  ==============================================
+     VARIABLE    ..ROWNUMBER..  BASE   COMPARE  
+  ----------------------------------------------
+   precip_heavy        1        6.375  6.222222 
+   precip_heavy        2        6.000  5.777778 
+   precip_heavy        3        5.500  5.888889 
+   precip_heavy        4        5.750  6.000000 
+   precip_heavy        5        5.750  6.111111 
+   precip_heavy        6        4.750  4.555556 
+   precip_heavy        7        4.500  4.666667 
+   precip_heavy        8        6.875  7.333333 
+   precip_heavy        9        6.125  5.777778 
+   precip_heavy       10        7.375  6.888889 
+  ----------------------------------------------
+
+
+First 10 of 149 rows are shown in table below
+
+  ============================================
+   VARIABLE  ..ROWNUMBER..   BASE    COMPARE  
+  --------------------------------------------
+     gdd           1        260.250  256.6667 
+     gdd           2        252.625  257.6667 
+     gdd           3        257.750  254.8889 
+     gdd           4        253.125  255.7778 
+     gdd           5        258.750  265.1111 
+     gdd           6        251.625  252.1111 
+     gdd           7        269.375  272.0000 
+     gdd           8        269.250  266.1111 
+     gdd           9        261.250  262.0000 
+     gdd          10        260.875  263.7778 
+  --------------------------------------------
+
+
+First 10 of 150 rows are shown in table below
+
+  ==============================================
+    VARIABLE    ..ROWNUMBER..   BASE   COMPARE  
+  ----------------------------------------------
+   freeze_thaw        1        33.125  35.55556 
+   freeze_thaw        2        39.875  38.33333 
+   freeze_thaw        3        36.500  38.22222 
+   freeze_thaw        4        43.375  41.11111 
+   freeze_thaw        5        35.250  32.55556 
+   freeze_thaw        6        41.875  41.22222 
+   freeze_thaw        7        32.500  31.77778 
+   freeze_thaw        8        29.750  31.00000 
+   freeze_thaw        9        32.000  33.00000 
+   freeze_thaw       10        35.125  34.77778 
+  ----------------------------------------------
+

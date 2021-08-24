@@ -1,0 +1,163 @@
+Differences found between the objects!
+
+A summary is given below.
+
+There are columns in BASE and COMPARE with different modes !!
+All rows are shown in table below
+
+  ================================
+   VARIABLE  MODE.BASE  MODE.COMP 
+  --------------------------------
+    month    character   numeric  
+  --------------------------------
+
+There are columns in BASE and COMPARE with different classes !!
+All rows are shown in table below
+
+  ==================================================
+           VARIABLE          CLASS.BASE  CLASS.COMP 
+  --------------------------------------------------
+          gdd_count           integer     numeric   
+            month            character    numeric   
+       no_precip_length       integer     numeric   
+        not_gdd_count         integer     numeric   
+   temp_over_95_pctl_length   integer     numeric   
+   temp_under_freeze_length   integer     numeric   
+  --------------------------------------------------
+
+There are columns in BASE and COMPARE with differing attributes !!
+All rows are shown in table below
+
+  =====================================================================
+   VARIABLE  ATTR_NAME             VALUES.BASE             VALUES.COMP 
+  ---------------------------------------------------------------------
+     date      tzone                                           UTC     
+    precip     names    c("", "", "", "", "", "", "", ...     NULL     
+    rhmax      names    c("", "", "", "", "", "", "", ...     NULL     
+    rhmin      names    c("", "", "", "", "", "", "", ...     NULL     
+     tmax      names    c("", "", "", "", "", "", "", ...     NULL     
+     tmin      names    c("", "", "", "", "", "", "", ...     NULL     
+  ---------------------------------------------------------------------
+
+Not all Values Compared Equal
+All rows are shown in table below
+
+  ======================================
+       Variable       No of Differences 
+  --------------------------------------
+         date              1183360      
+   temp_over_95_pctl          1709      
+   temp_over_99_pctl          1432      
+   temp_under_5_pctl           653      
+    precip_95_pctl            1324      
+    precip_99_pctl             311      
+  --------------------------------------
+
+
+First 10 of 1183360 rows are shown in table below
+
+  =================================================
+   VARIABLE  ..ROWNUMBER..     BASE      COMPARE   
+  -------------------------------------------------
+     date          1        1950-01-01  1950-01-01 
+     date          2        1950-01-01  1950-01-01 
+     date          3        1950-01-01  1950-01-01 
+     date          4        1950-01-01  1950-01-01 
+     date          5        1950-01-01  1950-01-01 
+     date          6        1950-01-01  1950-01-01 
+     date          7        1950-01-01  1950-01-01 
+     date          8        1950-01-01  1950-01-01 
+     date          9        1950-01-01  1950-01-01 
+     date         10        1950-01-01  1950-01-01 
+  -------------------------------------------------
+
+
+First 10 of 1709 rows are shown in table below
+
+  ==================================================
+       VARIABLE       ..ROWNUMBER..  BASE   COMPARE 
+  --------------------------------------------------
+   temp_over_95_pctl      6459       TRUE    FALSE  
+   temp_over_95_pctl      6460       TRUE    FALSE  
+   temp_over_95_pctl      7239       TRUE    FALSE  
+   temp_over_95_pctl      7240       TRUE    FALSE  
+   temp_over_95_pctl      7351       TRUE    FALSE  
+   temp_over_95_pctl      7352       TRUE    FALSE  
+   temp_over_95_pctl      8033       FALSE   TRUE   
+   temp_over_95_pctl      8034       FALSE   TRUE   
+   temp_over_95_pctl      8255       FALSE   TRUE   
+   temp_over_95_pctl      8256       FALSE   TRUE   
+  --------------------------------------------------
+
+
+First 10 of 1432 rows are shown in table below
+
+  ==================================================
+       VARIABLE       ..ROWNUMBER..  BASE   COMPARE 
+  --------------------------------------------------
+   temp_over_99_pctl      6437       TRUE    FALSE  
+   temp_over_99_pctl      6438       TRUE    FALSE  
+   temp_over_99_pctl      7173       FALSE   TRUE   
+   temp_over_99_pctl      7174       FALSE   TRUE   
+   temp_over_99_pctl      7411       FALSE   TRUE   
+   temp_over_99_pctl      7412       FALSE   TRUE   
+   temp_over_99_pctl      7419       TRUE    FALSE  
+   temp_over_99_pctl      7420       TRUE    FALSE  
+   temp_over_99_pctl      7493       FALSE   TRUE   
+   temp_over_99_pctl      7494       FALSE   TRUE   
+  --------------------------------------------------
+
+
+First 10 of 653 rows are shown in table below
+
+  ==================================================
+       VARIABLE       ..ROWNUMBER..  BASE   COMPARE 
+  --------------------------------------------------
+   temp_under_5_pctl       1615      FALSE   TRUE   
+   temp_under_5_pctl       1616      FALSE   TRUE   
+   temp_under_5_pctl      13723      TRUE    FALSE  
+   temp_under_5_pctl      13724      TRUE    FALSE  
+   temp_under_5_pctl      14855      FALSE   TRUE   
+   temp_under_5_pctl      14856      FALSE   TRUE   
+   temp_under_5_pctl      15651      FALSE   TRUE   
+   temp_under_5_pctl      15652      FALSE   TRUE   
+   temp_under_5_pctl      27487      FALSE   TRUE   
+   temp_under_5_pctl      27488      FALSE   TRUE   
+  --------------------------------------------------
+
+
+First 10 of 1324 rows are shown in table below
+
+  ===============================================
+      VARIABLE     ..ROWNUMBER..  BASE   COMPARE 
+  -----------------------------------------------
+   precip_95_pctl      2437       FALSE   TRUE   
+   precip_95_pctl      2438       FALSE   TRUE   
+   precip_95_pctl      3343       FALSE   TRUE   
+   precip_95_pctl      3344       FALSE   TRUE   
+   precip_95_pctl      4761       FALSE   TRUE   
+   precip_95_pctl      4762       FALSE   TRUE   
+   precip_95_pctl      4813       FALSE   TRUE   
+   precip_95_pctl      4814       FALSE   TRUE   
+   precip_95_pctl      4897       FALSE   TRUE   
+   precip_95_pctl      4898       FALSE   TRUE   
+  -----------------------------------------------
+
+
+First 10 of 311 rows are shown in table below
+
+  ===============================================
+      VARIABLE     ..ROWNUMBER..  BASE   COMPARE 
+  -----------------------------------------------
+   precip_99_pctl      19041      FALSE   TRUE   
+   precip_99_pctl      19042      FALSE   TRUE   
+   precip_99_pctl      21207      FALSE   TRUE   
+   precip_99_pctl      21208      FALSE   TRUE   
+   precip_99_pctl      35591      FALSE   TRUE   
+   precip_99_pctl      35592      FALSE   TRUE   
+   precip_99_pctl      50093      FALSE   TRUE   
+   precip_99_pctl      50094      FALSE   TRUE   
+   precip_99_pctl      67899      FALSE   TRUE   
+   precip_99_pctl      67900      FALSE   TRUE   
+  -----------------------------------------------
+
