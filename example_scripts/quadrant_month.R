@@ -5,7 +5,7 @@ library(here)
 library(rcf)
 library(ggrepel)
 
-my_directory <- "C:/Users/jnchr/Documents/test"
+my_directory <- here::here()
 SiteID <- "BAND"
 
 # raw_data <- rcf_data(SiteID = "BAND",
@@ -45,129 +45,41 @@ ggplot(means, aes(x = tavg_change,
 
 ggsave(here::here(paste(SiteID, "_quadrant_scatterplot.png",sep=""), width = 15, height = 9))
 
-### Avg Temp
 
-graphs <- function(future, variable){
-  quadrant_month <- quadrant_month %>%
-    filter(cf %in% c(future)) %>%
+bar_graph <- function(future1, future2, variable){
+
+  cap_str <- function(y) {
+    c <- strsplit(y, "_")[[1]]
+    paste(toupper(substring(c, 1,1)), substring(c, 2),
+          sep="", collapse=" ")
+  }
+
+  variable_name <- ifelse(variable == "tavg", "Average Temperature",
+                          ifelse(variable == "precip_yearly", "Precipitation",
+                                 ifelse(variable == "tmax", "Maximum Temperature",
+                                        ifelse(variable == "tmin", "Minimum Temperature",
+                                               ifelse(variable == "rhmin",
+                                                      "Minimum Relative Humidity",
+                                                      ifelse(variable == "rhmax",
+                                                             "Maximum Relative Humidity", cap_str(variable)))))))
+
+  quadrant_month_future <- quadrant_month %>%
+    filter(cf %in% c(future1, future2)) %>%
+    filter(time %in% c("Future")) %>%
     mutate(month = lubridate::month(month, label = TRUE))
 
-  variable = "tavg"
-  future = "Warm Wet"
-
-  ggplot(data = quadrant_month_ww, aes(x = month, y = variable)) +
-    geom_col(aes(fill = time,
-                 color = time),
+  ggplot(data = quadrant_month_future, aes(x = month, y = .data[[variable]])) +
+    geom_col(aes(fill = cf,
+                 color = cf),
              position = "dodge",
-             alpha = 0.7) +
-    scale_color_manual(values = c("darksalmon", "#E10720")) +
-    scale_fill_manual(values = c("darksalmon", "#E10720")) +
-    theme_minimal() +
-    theme(text = element_text(size = 20),
-          legend.title = element_blank(),
-          axis.title.x = element_blank(),
-          plot.title = element_text(hjust = 0.5)) +
-    labs(y = ifelse(variable == "tavg", "Average Temperature (F)",
-                    "Precipitation (in)"),
-         title = ifelse(variable == "tavg", paste("Comparison of historical and future average temperature in the", future, "climate future"),
-                                                  paste("Comparison of historical and future precipitation in the", future, "climate future")))
+             alpha = 0.7)  +
+    labs(y = variable_name,
+         title = paste("Comparison of", variable_name, "between the", future1, "and", future2, "climate futures"))
 
-  ggsave(here::here(paste(SiteID, "_", future, "_", variable, ".png",sep=""), width = 15, height = 9))
+  ggsave(here::here(paste(SiteID, "_month_", future1, "_", future2, "_", variable, ".png",sep="")), width = 15, height = 9)
 
 }
 
-graphs("Warm Wet", "Hot Wet", "tavg")
-
-### Warm Wet
-
-quadrant_month_ww <- quadrant_month %>%
-  filter(cf %in% c("Warm Wet")) %>%
-  mutate(month = lubridate::month(month, label = TRUE))
-
-ggplot(data = quadrant_month_ww, aes(x = month, y = tavg)) +
-  geom_col(aes(fill = time,
-               color = time),
-           position = "dodge",
-           alpha = 0.7) +
-  scale_color_manual(values = c("darksalmon", "#E10720")) +
-  scale_fill_manual(values = c("darksalmon", "#E10720")) +
-  theme_minimal() +
-  theme(text = element_text(size = 20),
-        legend.title = element_blank(),
-        axis.title.x = element_blank(),
-        plot.title = element_text(hjust = 0.5)) +
-  labs(y = "Average Temperature (F)",
-       title = "Comparison of historical and future average temperature in the 'Warm Wet' climate future")
-
-ggsave(here::here(paste(SiteID, "_warm_wet_tavg.png",sep=""), width = 15, height = 9))
-
-###Warm Dry
-
-quadrant_month_wd <- quadrant_month %>%
-  filter(cf %in% c("Warm Dry")) %>%
-  mutate(month = lubridate::month(month, label = TRUE))
-
-ggplot(data = quadrant_month_wd, aes(x = month, y = tavg)) +
-  geom_col(aes(fill = time,
-               color = time),
-           position = "dodge",
-           alpha = 0.7) +
-  scale_color_manual(values = c("darksalmon", "#E10720")) +
-  scale_fill_manual(values = c("darksalmon", "#E10720")) +
-  theme_minimal() +
-  theme(text = element_text(size = 20),
-        legend.title = element_blank(),
-        axis.title.x = element_blank(),
-        plot.title = element_text(hjust = 0.5)) +
-  labs(y = "Average Temperature (F)",
-       title = "Comparison of historical and future average temperature in the 'Warm Dry' climate future")
-
-ggsave(here::here(paste(SiteID, "_warm_dry_tavg.png",sep=""), width = 15, height = 9))
-
-### Hot Wet
-
-quadrant_month_hw <- quadrant_month %>%
-  filter(cf %in% c("Hot Wet")) %>%
-  mutate(month = lubridate::month(month, label = TRUE))
-
-ggplot(data = quadrant_month_hw, aes(x = month, y = tavg)) +
-  geom_col(aes(fill = time,
-               color = time),
-           position = "dodge",
-           alpha = 0.7) +
-  scale_color_manual(values = c("darksalmon", "#E10720")) +
-  scale_fill_manual(values = c("darksalmon", "#E10720")) +
-  theme_minimal() +
-  theme(text = element_text(size = 20),
-        legend.title = element_blank(),
-        axis.title.x = element_blank(),
-        plot.title = element_text(hjust = 0.5)) +
-  labs(y = "Average Temperature (F)",
-       title = "Comparison of historical and future average temperature in the 'Hot Wet' climate future")
-
-ggsave(here::here(paste(SiteID, "_hot_wet_tavg.png",sep=""), width = 15, height = 9))
-
-###Hot Dry
-
-quadrant_month_hd <- quadrant_month %>%
-  filter(cf %in% c("Hot Dry")) %>%
-  mutate(month = lubridate::month(month, label = TRUE))
-
-ggplot(data = quadrant_month_ww, aes(x = month, y = tavg)) +
-  geom_col(aes(fill = time,
-               color = time),
-           position = "dodge",
-           alpha = 0.7) +
-  scale_color_manual(values = c("darksalmon", "#E10720")) +
-  scale_fill_manual(values = c("darksalmon", "#E10720")) +
-  theme_minimal() +
-  theme(text = element_text(size = 20),
-        legend.title = element_blank(),
-        axis.title.x = element_blank(),
-        plot.title = element_text(hjust = 0.5)) +
-  labs(y = "Average Temperature (F)",
-       title = "Comparison of historical and future average temperature in the 'Warm Wet' climate future")
-
-ggsave(here::here(paste(SiteID, "_warm_wet_tavg.png",sep=""), width = 15, height = 9))
-
-
+bar_graph("Warm Wet", "Hot Wet", "tavg")
+bar_graph("Warm Wet", "Warm Dry", "heat_index")
+bar_graph("Hot Wet", "Hot Dry", "temp_over_99_pctl")
