@@ -1,0 +1,139 @@
+Differences found between the objects!
+
+A summary is given below.
+
+Not all Values Compared Equal
+All rows are shown in table below
+
+  ======================================
+       Variable       No of Differences 
+  --------------------------------------
+     precip_yearly            28        
+   temp_over_95_pctl          39        
+   temp_over_99_pctl          47        
+   temp_under_5_pctl           5        
+   no_precip_length          120        
+    precip_95_pctl            47        
+    precip_99_pctl             9        
+  --------------------------------------
+
+
+First 10 of 28 rows are shown in table below
+
+  ==================================================
+     VARIABLE     ..ROWNUMBER..    BASE    COMPARE  
+  --------------------------------------------------
+   precip_yearly        3        51.23163  51.09165 
+   precip_yearly        7        67.42438  67.24016 
+   precip_yearly       11        74.02272  73.82047 
+   precip_yearly       15        58.80887  58.64819 
+   precip_yearly       19        63.43572  63.26240 
+   precip_yearly       23        35.93831  35.84012 
+   precip_yearly       27        73.89211  73.69022 
+   precip_yearly       33        58.55688  58.39689 
+   precip_yearly       37        82.07246  81.84822 
+   precip_yearly       41        75.07570  74.87057 
+  --------------------------------------------------
+
+
+First 10 of 39 rows are shown in table below
+
+  =================================================
+       VARIABLE       ..ROWNUMBER..  BASE  COMPARE 
+  -------------------------------------------------
+   temp_over_95_pctl        5         41      40   
+   temp_over_95_pctl        7         20      19   
+   temp_over_95_pctl       22         96      95   
+   temp_over_95_pctl       25        101     100   
+   temp_over_95_pctl       26        100      99   
+   temp_over_95_pctl       27        100      99   
+   temp_over_95_pctl       28         91      90   
+   temp_over_95_pctl       34         73      72   
+   temp_over_95_pctl       35         31      30   
+   temp_over_95_pctl       38         50      49   
+  -------------------------------------------------
+
+
+First 10 of 47 rows are shown in table below
+
+  =================================================
+       VARIABLE       ..ROWNUMBER..  BASE  COMPARE 
+  -------------------------------------------------
+   temp_over_99_pctl        3         53      52   
+   temp_over_99_pctl        4         33      32   
+   temp_over_99_pctl        8         64      63   
+   temp_over_99_pctl        9         54      53   
+   temp_over_99_pctl       13         53      52   
+   temp_over_99_pctl       22         69      66   
+   temp_over_99_pctl       24         85      84   
+   temp_over_99_pctl       27         78      77   
+   temp_over_99_pctl       29        114     112   
+   temp_over_99_pctl       34         33      31   
+  -------------------------------------------------
+
+
+All rows are shown in table below
+
+  =================================================
+       VARIABLE       ..ROWNUMBER..  BASE  COMPARE 
+  -------------------------------------------------
+   temp_under_5_pctl        30        11     12    
+   temp_under_5_pctl        50        21     22    
+   temp_under_5_pctl        65        28     29    
+   temp_under_5_pctl       103        12     13    
+   temp_under_5_pctl       113        20     21    
+  -------------------------------------------------
+
+
+First 10 of 120 rows are shown in table below
+
+  ================================================
+       VARIABLE      ..ROWNUMBER..  BASE  COMPARE 
+  ------------------------------------------------
+   no_precip_length        1        1028    18    
+   no_precip_length        2        1586    22    
+   no_precip_length        3        1299    23    
+   no_precip_length        4         933    18    
+   no_precip_length        5        1000    24    
+   no_precip_length        6        1321    29    
+   no_precip_length        7         972    19    
+   no_precip_length        8        1454    27    
+   no_precip_length        9        1245    23    
+   no_precip_length       10         768    13    
+  ------------------------------------------------
+
+
+First 10 of 47 rows are shown in table below
+
+  ==============================================
+      VARIABLE     ..ROWNUMBER..  BASE  COMPARE 
+  ----------------------------------------------
+   precip_95_pctl        1          9     10    
+   precip_95_pctl        3          3      5    
+   precip_95_pctl        4          4      5    
+   precip_95_pctl        5          4      5    
+   precip_95_pctl        7          4      6    
+   precip_95_pctl        8          1      2    
+   precip_95_pctl       13          5      6    
+   precip_95_pctl       15          6      7    
+   precip_95_pctl       18         16     17    
+   precip_95_pctl       19         10     12    
+  ----------------------------------------------
+
+
+All rows are shown in table below
+
+  ==============================================
+      VARIABLE     ..ROWNUMBER..  BASE  COMPARE 
+  ----------------------------------------------
+   precip_99_pctl        15        3       4    
+   precip_99_pctl        16        1       2    
+   precip_99_pctl        36        1       2    
+   precip_99_pctl        53        2       3    
+   precip_99_pctl        68        1       2    
+   precip_99_pctl        81        1       2    
+   precip_99_pctl       101        0       1    
+   precip_99_pctl       103        3       4    
+   precip_99_pctl       115        0       1    
+  ----------------------------------------------
+

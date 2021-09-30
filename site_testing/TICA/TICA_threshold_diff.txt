@@ -46,11 +46,11 @@ All rows are shown in table below
        Variable       No of Differences 
   --------------------------------------
          date              1183360      
-   temp_over_95_pctl          1701      
-   temp_over_99_pctl          1434      
-   temp_under_5_pctl           607      
-    precip_95_pctl            1435      
-    precip_99_pctl             302      
+   temp_over_95_pctl           813      
+   temp_over_99_pctl           482      
+   temp_under_5_pctl           244      
+    precip_95_pctl            1395      
+    precip_99_pctl             209      
   --------------------------------------
 
 
@@ -72,89 +72,89 @@ First 10 of 1183360 rows are shown in table below
   -------------------------------------------------
 
 
-First 10 of 1701 rows are shown in table below
+First 10 of 813 rows are shown in table below
 
   =================================================
        VARIABLE       ..ROWNUMBER..  BASE  COMPARE 
   -------------------------------------------------
-   temp_over_95_pctl      7637       TRUE   FALSE  
-   temp_over_95_pctl      7638       TRUE   FALSE  
-   temp_over_95_pctl      8059       TRUE   FALSE  
-   temp_over_95_pctl      8060       TRUE   FALSE  
-   temp_over_95_pctl      8081       TRUE   FALSE  
-   temp_over_95_pctl      8082       TRUE   FALSE  
-   temp_over_95_pctl      8327       TRUE   FALSE  
-   temp_over_95_pctl      8328       TRUE   FALSE  
-   temp_over_95_pctl      8957       TRUE   FALSE  
-   temp_over_95_pctl      8958       TRUE   FALSE  
+   temp_over_95_pctl       7485      TRUE   FALSE  
+   temp_over_95_pctl       7486      TRUE   FALSE  
+   temp_over_95_pctl       8091      TRUE   FALSE  
+   temp_over_95_pctl       8092      TRUE   FALSE  
+   temp_over_95_pctl       8691      TRUE   FALSE  
+   temp_over_95_pctl       8692      TRUE   FALSE  
+   temp_over_95_pctl       8905      TRUE   FALSE  
+   temp_over_95_pctl       8906      TRUE   FALSE  
+   temp_over_95_pctl      21899      TRUE   FALSE  
+   temp_over_95_pctl      21900      TRUE   FALSE  
   -------------------------------------------------
 
 
-First 10 of 1434 rows are shown in table below
+First 10 of 482 rows are shown in table below
 
   =================================================
        VARIABLE       ..ROWNUMBER..  BASE  COMPARE 
   -------------------------------------------------
-   temp_over_99_pctl      22419      TRUE   FALSE  
-   temp_over_99_pctl      22420      TRUE   FALSE  
-   temp_over_99_pctl      22449      TRUE   FALSE  
-   temp_over_99_pctl      22450      TRUE   FALSE  
-   temp_over_99_pctl      22475      TRUE   FALSE  
-   temp_over_99_pctl      22476      TRUE   FALSE  
-   temp_over_99_pctl      22779      TRUE   FALSE  
-   temp_over_99_pctl      22780      TRUE   FALSE  
-   temp_over_99_pctl      23299      TRUE   FALSE  
-   temp_over_99_pctl      23300      TRUE   FALSE  
+   temp_over_99_pctl      23867      TRUE   FALSE  
+   temp_over_99_pctl      23868      TRUE   FALSE  
+   temp_over_99_pctl      23907      TRUE   FALSE  
+   temp_over_99_pctl      23908      TRUE   FALSE  
+   temp_over_99_pctl      51095      TRUE   FALSE  
+   temp_over_99_pctl      51096      TRUE   FALSE  
+   temp_over_99_pctl      51595      TRUE   FALSE  
+   temp_over_99_pctl      51596      TRUE   FALSE  
+   temp_over_99_pctl      82195      TRUE   FALSE  
+   temp_over_99_pctl      82196      TRUE   FALSE  
   -------------------------------------------------
 
 
-First 10 of 607 rows are shown in table below
+First 10 of 244 rows are shown in table below
 
   ==================================================
        VARIABLE       ..ROWNUMBER..  BASE   COMPARE 
   --------------------------------------------------
-   temp_under_5_pctl       1143      FALSE   TRUE   
-   temp_under_5_pctl       1144      FALSE   TRUE   
-   temp_under_5_pctl       1255      FALSE   TRUE   
-   temp_under_5_pctl       1256      FALSE   TRUE   
-   temp_under_5_pctl       1365      TRUE    FALSE  
-   temp_under_5_pctl       1366      TRUE    FALSE  
-   temp_under_5_pctl      13619      TRUE    FALSE  
-   temp_under_5_pctl      13620      TRUE    FALSE  
-   temp_under_5_pctl      14629      TRUE    FALSE  
-   temp_under_5_pctl      14630      TRUE    FALSE  
+   temp_under_5_pctl      15017      FALSE   TRUE   
+   temp_under_5_pctl      15018      FALSE   TRUE   
+   temp_under_5_pctl      29087      FALSE   TRUE   
+   temp_under_5_pctl      29088      FALSE   TRUE   
+   temp_under_5_pctl      41833      FALSE   TRUE   
+   temp_under_5_pctl      41834      FALSE   TRUE   
+   temp_under_5_pctl      44857      FALSE   TRUE   
+   temp_under_5_pctl      44858      FALSE   TRUE   
+   temp_under_5_pctl      45987      FALSE   TRUE   
+   temp_under_5_pctl      45988      FALSE   TRUE   
   --------------------------------------------------
 
 
-First 10 of 1435 rows are shown in table below
+First 10 of 1395 rows are shown in table below
 
   ===============================================
       VARIABLE     ..ROWNUMBER..  BASE   COMPARE 
   -----------------------------------------------
    precip_95_pctl      1423       FALSE   TRUE   
    precip_95_pctl      1424       FALSE   TRUE   
+   precip_95_pctl      2319       FALSE   TRUE   
+   precip_95_pctl      2320       FALSE   TRUE   
    precip_95_pctl      2363       FALSE   TRUE   
    precip_95_pctl      2364       FALSE   TRUE   
    precip_95_pctl      5575       FALSE   TRUE   
    precip_95_pctl      5576       FALSE   TRUE   
    precip_95_pctl      5909       FALSE   TRUE   
    precip_95_pctl      5910       FALSE   TRUE   
-   precip_95_pctl      6319       FALSE   TRUE   
-   precip_95_pctl      6320       FALSE   TRUE   
   -----------------------------------------------
 
 
-First 10 of 302 rows are shown in table below
+First 10 of 209 rows are shown in table below
 
   ===============================================
       VARIABLE     ..ROWNUMBER..  BASE   COMPARE 
   -----------------------------------------------
+   precip_99_pctl      10905      FALSE   TRUE   
+   precip_99_pctl      10906      FALSE   TRUE   
    precip_99_pctl      17099      FALSE   TRUE   
    precip_99_pctl      17100      FALSE   TRUE   
    precip_99_pctl      27851      FALSE   TRUE   
    precip_99_pctl      27852      FALSE   TRUE   
-   precip_99_pctl      30503      FALSE   TRUE   
-   precip_99_pctl      30504      FALSE   TRUE   
    precip_99_pctl      32811      FALSE   TRUE   
    precip_99_pctl      32812      FALSE   TRUE   
    precip_99_pctl      46399      FALSE   TRUE   
